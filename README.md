@@ -1,8 +1,10 @@
 # PGM to SDF Converter
 
-A ROS2 package for converting 2D occupancy grid maps to Gazebo Classic simulation worlds. Simply point it at your map file, and it generates a ready-to-use SDF world with walls from it.
+A ROS2 package that automatically converts 2D occupancy grid maps (PGM/YAML) into 3D Gazebo Classic simulation worlds. It intelligently processes both clean CAD maps and noisy SLAM-generated maps, extracting wall segments and generating optimized SDF world files ready for robot simulation. Features adaptive noise filtering, smart wall detection, and automatic segment merging to create lightweight, accurate simulation environments.
 
-**Works with both clean CAD maps and noisy SLAM-generated maps** - no configuration needed.
+Occupancy Map (PGM)             |  Generated SDF
+:-------------------------:|:-------------------------:
+<img src="media/real_world_map.png" alt="drawing" width="550"/> | ![sdf](https://github.com/robotics-upo/pgm_to_sdf_converter/blob/master/media/real_world_map.gif)
 
 ## Table of Contents
 
